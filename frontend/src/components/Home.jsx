@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import profileImg from "../assets/chakuliimg.jpg"; 
+import profileImg from "../assets/chakuliimg.jpg";
 
 function Home() {
   return (
@@ -41,7 +41,22 @@ function Home() {
               </strong>
             </p>
 
-            <a href="/Chakuli_shembule_resume (1).pdf" download className="btn btn-primary mt-3">
+            <a
+              href="/Chakuli_shembule_resume (1).pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn mt-3 me-3"
+              style={{ backgroundColor: "#15caf3", color: "#0f0f0f" }}
+            >
+              Preview Resume
+            </a>
+
+            <a
+              href="/Chakuli_shembule_resume (1).pdf"
+              download
+              className="btn btn-outline-primary mt-3"
+              style={{ backgroundColor: "#15caf3", color: "#0f0f0f" }}
+            >
               Download Resume 📄
             </a>
           </div>

@@ -27,7 +27,7 @@ function Contact() {
       setError("");
       setSuccess("");
 
-      await axios.post("http://localhost:5000/api/contact", form);
+      await axios.post("https://render-backend-mpim.onrender.com/api/contact", form);
 
       setSuccess("Message sent successfully.");
       setForm({ name: "", email: "", message: "" });

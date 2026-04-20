@@ -1,17 +1,14 @@
 function CircleProgress({ percent }) {
   const radius = 50;
-  const stroke = 4; 
+  const stroke = 4;
   const normalizedRadius = radius - stroke * 2;
   const circumference = normalizedRadius * 2 * Math.PI;
 
-  const strokeDashoffset =
-    circumference - (percent / 100) * circumference;
+  const strokeDashoffset = circumference - (percent / 100) * circumference;
 
   return (
     <div style={{ width: 110, height: 110, margin: "auto" }}>
       <svg height={110} width={110}>
-
-        {/* Background */}
         <circle
           stroke="#333"
           fill="transparent"
@@ -21,7 +18,6 @@ function CircleProgress({ percent }) {
           cy="55"
         />
 
-        {/* Progress */}
         <circle
           stroke="#15caf3"
           fill="transparent"
@@ -38,7 +34,6 @@ function CircleProgress({ percent }) {
           cy="55"
         />
 
-        {/* Text */}
         <text
           x="50%"
           y="50%"
@@ -62,8 +57,8 @@ function Skills() {
     { name: "JavaScript", level: 85 },
     { name: "Python", level: 75 },
     { name: "React.js", level: 75 },
-    { name:"MongoDB", level:80},
-    { name:"Node.js", level:75},
+    { name: "MongoDB", level: 80 },
+    { name: "Node.js", level: 75 },
   ];
 
   const professionalSkills = [
@@ -79,14 +74,11 @@ function Skills() {
         <h2 className="text-center mb-5">My Skills</h2>
 
         <div className="row">
-
           <div className="col-md-6 ps-5">
             <h4 className="text-center mb-4">Technical Skills</h4>
 
             {technicalSkills.map((skill, i) => (
               <div key={i} className="mb-4">
-
-                {/* Name + % */}
                 <div className="d-flex justify-content-between mb-1">
                   <span>{skill.name}</span>
                   <span>{skill.level}%</span>
@@ -99,7 +91,6 @@ function Skills() {
                     style={{ width: `${skill.level}%` }}
                   ></div>
                 </div>
-
               </div>
             ))}
           </div>
@@ -110,16 +101,13 @@ function Skills() {
             <div className="row">
               {professionalSkills.map((skill, i) => (
                 <div className="col-6 text-center mb-4" key={i}>
-                  
                   <CircleProgress percent={skill.level} />
 
                   <p className="mt-2">{skill.name}</p>
-
                 </div>
               ))}
             </div>
           </div>
-
         </div>
       </div>
     </section>

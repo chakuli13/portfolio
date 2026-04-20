@@ -7,8 +7,8 @@ This project showcases my skills, projects, and includes a fully functional **co
 
 Live Demo
 
-🔗 Frontend: https://your-portfolio.vercel.app
-🔗 Backend API: https://your-backend.onrender.com
+🔗 Frontend: https://portfolio-mu-rust-91.vercel.app/
+🔗 Backend API: https://render-backend-mpim.onrender.com
 
 ---
 

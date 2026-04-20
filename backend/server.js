@@ -6,7 +6,6 @@ const cors = require("cors");
 
 const app = express();
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
@@ -15,7 +14,7 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 
-/* ---------------- ROUTE ---------------- */
+
 app.post("/api/contact", async (req, res) => {
   try {
     const { name, email, message } = req.body;
@@ -36,7 +35,7 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-/* ---------------- MODEL ---------------- */
+
 const contactSchema = new mongoose.Schema({
   name: String,
   email: String,
@@ -45,7 +44,6 @@ const contactSchema = new mongoose.Schema({
 
 const Contact = mongoose.model("Contact", contactSchema);
 
-/* ---------------- SERVER ---------------- */
 app.listen(5000, () => {
   console.log("Server running on port 5000");
 });

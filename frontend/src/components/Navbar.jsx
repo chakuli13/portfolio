@@ -20,8 +20,6 @@ function Navbar() {
 
         <div id="nav" className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto align-items-center gap-3">
-
-            {/* Home */}
             <li>
               <a
                 href="#home"
@@ -32,7 +30,6 @@ function Navbar() {
               </a>
             </li>
 
-            {/* About */}
             <li>
               <a
                 href="#about"
@@ -43,7 +40,6 @@ function Navbar() {
               </a>
             </li>
 
-            {/* Projects */}
             <li>
               <a
                 href="#projects"
@@ -54,7 +50,6 @@ function Navbar() {
               </a>
             </li>
 
-            {/* Contact */}
             <li>
               <a
                 href="#contact"
@@ -65,7 +60,6 @@ function Navbar() {
               </a>
             </li>
 
-            {/* GitHub */}
             <a
               href="https://github.com/chakuli13"
               target="_blank"
@@ -76,7 +70,6 @@ function Navbar() {
               <FaGithub size={20} />
             </a>
 
-            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/chakuli-shembule/"
               target="_blank"
@@ -86,7 +79,6 @@ function Navbar() {
             >
               <FaLinkedin size={20} />
             </a>
-
           </ul>
         </div>
       </div>
