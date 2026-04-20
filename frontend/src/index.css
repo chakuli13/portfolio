@@ -39,6 +39,7 @@ h1 {
 /* Navbar blur */
 .navbar {
   backdrop-filter: blur(10px);
+  background-color: #121212
 }
 
 /* Thin underline progress */

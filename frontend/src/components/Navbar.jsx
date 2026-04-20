@@ -1,13 +1,23 @@
 import { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import logo from "../assets/Portfolio_logo.webp";
 
 function Navbar() {
   const [active, setActive] = useState("home");
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav
+      className="navbar navbar-expand-lg navbar-dark fixed-top"
+      style={{ backgroundColor: "#121212" }}
+    >
       <div className="container">
-        <a className="navbar-brand fw-bold">CSS_Portfolio</a>
+        <a className="navbar-brand fw-bold" href="#home">
+          <img
+            src={logo}
+            alt="logo"
+            style={{ height: "40px", objectFit: "contain" }}
+          />
+        </a>
 
         <button
           className="navbar-toggler"

@@ -2,7 +2,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-dark text-white text-center p-3">
+    <footer
+      className=" text-white text-center p-3"
+      style={{ backgroundColor: "#121212" }}
+    >
       <div className="mb-2">
         <a
           href="https://github.com/chakuli13"
