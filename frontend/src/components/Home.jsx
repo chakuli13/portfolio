@@ -4,7 +4,7 @@ import profileImg from "../assets/chakuliimg.jpg";
 
 function Home() {
   return (
-    <section id="home" className="vh-100 d-flex align-items-center">
+    <section id="home" className="vh-100 d-flex align-items-center" style={{ paddingTop: "80px" }}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-12 col-md-6 text-center text-md-start">
